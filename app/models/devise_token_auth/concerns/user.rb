@@ -95,7 +95,7 @@ module DeviseTokenAuth::Concerns::User
 
 
     def tokens_has_json_column_type?
-      table_exists? && self.columns_hash['tokens'] && self.columns_hash['tokens'].type.in?([:json, :jsonb])
+      true
     end
   end
 
